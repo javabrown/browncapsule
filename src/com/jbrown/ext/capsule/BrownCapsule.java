@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.lang.reflect.Constructor;
 
 import com.jbrown.ext.capsule.airport.data.AirportCapsuleI;
+import com.jbrown.ext.capsule.airport.data.GeoWorldAirportCapsule;
 import com.jbrown.ext.capsule.impl.BrownGeoCapsule;
 import com.jbrown.ext.capsule.impl.BrownGeoCapsule.GeoCapsuleI;
 import com.jbrown.ext.capsule.impl.BrownGeoCapsuleI;
@@ -19,8 +20,7 @@ public class BrownCapsule implements BrownCapsuleI, Serializable{
 	
 	@Override
 	public AirportCapsuleI getAirportData() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return new GeoWorldAirportCapsule();
 	}
 	
 	public static void main(String[] xx) throws Exception{
