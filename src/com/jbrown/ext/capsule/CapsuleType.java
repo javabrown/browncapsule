@@ -1,11 +1,12 @@
 package com.jbrown.ext.capsule;
 
+import java.io.Serializable;
 import java.lang.reflect.Constructor;
 
 import com.jbrown.ext.capsule.impl.BrownGeoCapsule;
 import com.jbrown.ext.capsule.impl.BrownGeoCapsule.GeoCapsuleI;
 
-public enum CapsuleType {
+public enum CapsuleType implements Serializable{
 	GEOGRAPHY(1, "GEO", BrownGeoCapsule.class), 
 	UTILITY(2, "UTIL", null);
 

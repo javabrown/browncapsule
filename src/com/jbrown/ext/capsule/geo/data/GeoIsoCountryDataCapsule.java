@@ -1,5 +1,6 @@
 package com.jbrown.ext.capsule.geo.data;
 import java.io.ByteArrayInputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,7 +15,11 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
  
-public class GeoIsoCountryDataCapsule {
+public class GeoIsoCountryDataCapsule implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	List<Map<String, String>> _isoCountryData;
  
 	
